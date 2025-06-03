@@ -21,9 +21,10 @@ models:
     number: integer nullable
     road_id: integer nullable
     city_id: integer
+    square_id: integer nullable
     timestamps: true
     relationships:
-      belongsTo: City,Road
+      belongsTo: City,Road,Square
       hasMany: Square
 
   Square:

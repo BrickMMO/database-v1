@@ -19,6 +19,7 @@ return new class extends Migration
             $table->integer('number')->nullable();
             $table->foreignId('road_id')->nullable();
             $table->foreignId('city_id');
+            $table->foreignId('square_id')->nullable();
             $table->timestamps();
         });
     }

@@ -46,6 +46,11 @@ class Building extends Model
         return $this->belongsTo(Road::class);
     }
 
+    public function square(): BelongsTo
+    {
+        return $this->belongsTo(Square::class);
+    }
+
     public function squares(): HasMany
     {
         return $this->hasMany(Square::class);
